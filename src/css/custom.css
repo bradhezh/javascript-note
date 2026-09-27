@@ -31,12 +31,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* for pdf
-.markdown {
-  font-size: 0.8rem;
-}
-*/
-
 .markdown p {
   margin-bottom: 0.6rem;
 }
@@ -52,3 +46,17 @@
 .markdown h3 {
   font-size: 1.2rem;
 }
+
+code {
+  font-size: 0.8rem;
+}
+
+/* for pdf
+.markdown {
+  font-size: 10pt;
+}
+
+code {
+  font-size: 8.5pt;
+}
+*/
