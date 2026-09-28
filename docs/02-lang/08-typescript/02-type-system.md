@@ -7,11 +7,7 @@ TypeScript types are structural rather than nominal. For example, if an object t
 <table>
   <caption>Type Constructs</caption>
   <thead>
-    <tr>
-      <th>Concept</th>
-      <th>Description</th>
-      <th style={{ width: "45%" }}>Example</th>
-    </tr>
+    <tr><th>Concept</th><th>Description</th><th style={{ width: "45%" }}>Example</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -166,7 +162,7 @@ const printLength = (value: unknown) => {
 };
 ```
 
-Note that in function assignability, the rule for parameters is reversed, meaning that when function type _A_ is assignable to function type _B_, parameter types of _B_ must be assignable to corresponding ones of _A_. This is because functions can actually take more general but not more specific types of the parameters to satisfy a function type.
+Note that in function assignability, the rule for parameters is reversed, meaning that when function type _A_ is assignable to function type _B_, parameter types of _B_ must be assignable to corresponding ones of _A_. This is because functions can actually take more general but not more specific parameter types to satisfy a function type.
 
 ```typescript title="Inversion for Parameters of Function Assignability"
 // Error: Type '(x: "a") => void' is not assignable to type '(x: string) => unknown'. Types of
@@ -178,7 +174,7 @@ bar("a");
 bar("b");
 ```
 
-Apart from TypeScript compiler options like `noImplicitAny`, ESLint can also be used to restrict the use of `any` for stronger type safety.
+Apart from TypeScript compiler options like `noImplicitAny`, ESLint can also be used to restrict `any` for stronger type safety.
 
 ```typescript title="Type Safety Practice"
 // ESLint `no-explicit-any` can prevent `any` from being explicitly used. As for `any` implicitly
