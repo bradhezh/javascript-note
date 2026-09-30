@@ -174,7 +174,7 @@ bar("a");
 bar("b");
 ```
 
-Apart from TypeScript compiler options like `noImplicitAny`, ESLint can also be used to restrict `any` for stronger type safety.
+Apart from TypeScript compiler options like `noImplicitAny`, [ESLint](/tool/toolchain/eslint) can also be used to restrict `any` for stronger type safety.
 
 ```typescript title="Type Safety Practice"
 // ESLint `no-explicit-any` can prevent `any` from being explicitly used. As for `any` implicitly
