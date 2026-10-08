@@ -67,7 +67,7 @@ const config: Config = {
           onInlineTags: "warn",
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "warn",
-          }*/ false,
+        }*/ false,
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -84,17 +84,17 @@ const config: Config = {
     navbar: {
       title: "JavaScript",
       logo: {
-        alt: "JavaScript Logo",
+        alt: "",
         src: "img/logo.svg",
       },
       items: [
+        /*
         {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Table of Contents",
+          label: "Tutorial",
         },
-        /*
         { to: "/blog", label: "Blog", position: "left" },
         */
         {

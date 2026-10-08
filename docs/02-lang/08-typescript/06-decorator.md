@@ -1,5 +1,5 @@
 ---
-title: 2.8.6 - Decorators
+title: 2.8.6. Decorators
 ---
 
 Decorators are inherent in functional languages including JavaScript, also known as Higher-Order Functions (HOF), i.e. functions taking other functions as parameters, which forms a design pattern — decorators provide certain logic that is additional to and reusable across different functions. In functional languages, a decorator typically returns a new function with the same interface as the one to be decorated. In the class-based paradigm, decorators are reusable across classes, implemented via metaprogramming in compiled languages. Compared to templates — another typical metaprogramming technique that is completely static with heavy rigid type contracts and potential code bloat, compilers only emit metadata for decorators (annotations in Java or attributes in C#), while the binding can still be dynamically executed at runtime by frameworks. Furthermore, in modern Java and C#, frameworks can leverage compile-time tools (Java Annotation Processors or Roslyn Source Generators in C#) to generate hardcoded wired-up code at compile time, while compilers use those framework-provided generators to complete the binding entirely during compilation, retaining declarative elegance while enabling reflection-free execution and native AOT compilation.

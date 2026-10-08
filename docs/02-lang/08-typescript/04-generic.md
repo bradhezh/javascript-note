@@ -1,5 +1,5 @@
 ---
-title: 2.8.4 - Type Logic and Generics
+title: 2.8.4. Type Logic and Generics
 ---
 
 In addition to implicit type inference, TypeScript also supports explicit type manipulation and transformation with various logic. TypeScript provides structures including conditional types, mapped types, and template literal types, with operations like `typeof`, `keyof`, indexed access, key remapping, and `infer`, as well as generics, where type parameters (instead of general types like `object`) can be used for types or functions without widening.

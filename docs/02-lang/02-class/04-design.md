@@ -1,5 +1,5 @@
 ---
-title: 2.2.4 - Reflection on Design
+title: 2.2.4. Reflection on Design
 ---
 
 In statically typed languages, types determine data storage structures upon which operations depend (specifically offsets within the structure), making types the fundamental design unit. In contrast, in completely dynamically typed languages like JavaScript, types belong to values, meaning that data storage structures and valid operations are all determined by values. Consequently, it is unnecessary to design types for functions to operate on proper data, as functions operate on any data with proper values, which makes functions the basic design unit. Additionally, only global functions or methods of global objects are reusable at [the program level](/lang/function/intro).

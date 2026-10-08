@@ -1,5 +1,5 @@
 ---
-title: 1 - Introduction
+title: Chapter 1. Introduction
 slug: /
 ---
 

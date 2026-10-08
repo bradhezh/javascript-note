@@ -1,5 +1,5 @@
 ---
-title: 2.8.3 - Type Assertions
+title: 2.8.3. Type Assertions
 ---
 
 At compile time, types can be inferred from values, but in function definitions, parameter types normally need to be annotated, except for inline callbacks, where parameter types can still be inferred from calling. Parameters might be annotated with wider types than the actual arguments passed to them, especially when working with general types like `object`, with the expected return type widened accordingly. Moreover, compile-time inference cannot always reflect real runtime types, which could depend on different runtime values or runtime logic that cannot be inferred at compile time. Type assertions then provide a resort for programmers to explicitly assert types, relying on runtime logic for type safety. Nevertheless, assertions retain partial compile-time type safety, where assignability must exist in at least one direction. For example, `unknown` can be asserted as anything because anything is assignable to `unknown`.

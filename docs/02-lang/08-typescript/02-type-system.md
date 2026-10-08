@@ -1,5 +1,5 @@
 ---
-title: 2.8.2 - The Type System
+title: 2.8.2. The Type System
 ---
 
 TypeScript types are structural rather than nominal. For example, if an object type has all members required by another, it is assignable to that one even if it possesses additional members. In fact, _A_ is assignable to _B_ means that any instance of _A_ meets (satisfies) the requirements of _B_ and then can be regarded as an instance of _B_, and _A_ can actually be more specific (narrow) than _B_. For example, a subclass is assignable to its superclass. Types can either be implicitly inferred by TypeScript or explicitly annotated by programmers. If left unannotated, a type that cannot be inferred implicitly becomes `any`, which disables type checking. Implicit `any` can be prevented by the `noImplicitAny` compiler option, and `unknown` can be used for better type safety. Everything is assignable to `unknown`, but `unknown` is not assignable to anything except itself and `any`, meaning that `unknown` can be regarded as the most general (wide) type.
