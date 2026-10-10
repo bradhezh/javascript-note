@@ -51,6 +51,10 @@ code {
   font-size: 0.8rem;
 }
 
+[class*="codeBlockContainer"] {
+  margin-top: 1.2rem;
+}
+
 /* for pdf
 .markdown {
   font-size: 10pt;
